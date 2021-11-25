@@ -4,582 +4,299 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookly</title>
+    <title>Come to our library</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     
-<!-- header section starts  -->
+<!-- header section starts      -->
 
-<header class="header">
+<header>
 
-    <div class="header-1">
+    <a href="#" class="logo">Bookly</a>
 
-        <a href="#" class="logo"> <i class="fas fa-book"></i> bookly </a>
+    <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#dishes">Books</a>
+        <a href="#about">About us</a>
+        <a href="#menu">Menu</a>
+        <!-- <a href="#review">Reviews</a> -->
+        <a href="#order">Sign in</a>
+    </nav>
 
-        <form action="" class="search-form">
-            <input type="search" name="" placeholder="search books here..." id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
-
-        <div class="icons">
-            <div id="search-btn" class="fas fa-search"></div>
-            <a href="#" class="fas fa-heart"></a>
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <!-- <i class="fas fa-search" id="search-icon"></i> -->
+        <a href="#" class="fas fa-heart"></a>
+        <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+            <!-- <div id="search-btn" class="fas fa-search"></div> -->
+            <!-- <a href="#" class="fas fa-heart"></a> -->
             <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
-            <div id="login-btn" class="fas fa-user"></div>
-        </div>
-
+            <!-- <div id="login-btn" class="fas fa-user"></div> -->
+            <i class="fas fa-user" id="search-icon"></i>
     </div>
-
-    <div class="header-2">
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#featured">books</a>
-            <a href="#arrivals">famous one</a>
-            <a href="#reviews">reviews</a>
-            <a href="#blogs">read</a>
-        </nav>
-    </div>
+   
 
 </header>
 
-<!-- header section ends -->
+<!-- header section ends-->
 
-<!-- bottom navbar  -->
-
-<nav class="bottom-navbar">
-    <a href="#home" class="fas fa-home"></a>
-    <a href="#featured" class="fas fa-list"></a>
-    <a href="#arrivals" class="fas fa-tags"></a>
-    <a href="#reviews" class="fas fa-comments"></a>
-    <a href="#blogs" class="fas fa-blog"></a>
-</nav>
-
-<!-- login form  -->
-
-<div class="login-form-container">
-
+<!-- search form  -->
+<div class="login-form-container"> 
+    <div class="box">
+<form action="" id="search-form">
+    <!-- <input type="search" placeholder="Name" name="" id="search-box"> -->
     <div id="close-login-btn" class="fas fa-times"></div>
-
-    <form action="">
         <h3>sign in</h3>
         <span>username</span>
-        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <input type="email" name="" class="search-box" placeholder="enter your email" id="">
         <span>password</span>
-        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <input type="password" name="" class="search-box" placeholder="enter your password" id="">
         <div class="checkbox">
-            <input type="checkbox" name="" id="remember-me">
+            <input type="checkbox" name="" id="search-box">
             <label for="remember-me"> remember me</label>
         </div>
         <input type="submit" value="sign in" class="btn">
         <p>forget password ? <a href="#">click here</a></p>
         <p>don't have an account ? <a href="#">create one</a></p>
-    </form>
-
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
 </div>
+</div>
+<!-- login form  -->
+
 
 <!-- home section starts  -->
 
 <section class="home" id="home">
 
+    <div class="swiper-container home-slider">
+
+        <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span></span>
+                    <h3></h3>
+                    <p>Reading the best state yet to keep absolute loneliness at bay.</p>
+                    <a href="https://en.wikipedia.org/wiki/Wings_of_Fire_(autobiography)" class="btn">William Styron</a>
+                </div>
+                <div class="image">
+                    <img src="images/blog-4.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span></span>
+                    <h3></h3>
+                    <p>There is more treasure in books than in all the pirate’s loot on Treasure Island.</p>
+                    <a href="#" class="btn">Groucho Marx</a>
+                </div>
+                <div class="image">
+                    <img src="images/head-1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span></span>
+                    <h3></h3>
+                    <p>"The library is inhabited by spirits that come out of the pages at night."</p>
+                    <a href="#" class="btn">Kurt Vonnegut</a>
+                </div>
+                <div class="image">
+                    <img src="images/blog-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- books section starts  -->
+
+<section class="dishes" id="dishes">
+
+    <h3 class="sub-heading"> our books </h3>
+    <h1 class="heading"> popular ones </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/Agnipankh.jfif" alt="">
+            <h3>Wings of fire</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>429 pages</span>
+            <a href="https://www.google.co.in/books/edition/Wings_of_Fire/c3qmIZtWUjAC?hl=en&gbpv=1" class="btn">read now</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/chankya.jfif" alt="">
+            <h3>Chanakya Neeti</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>1320 pages</span>
+            <a href="https://www.google.co.in/books/edition/Chanakya_Neeti/uIwzEAAAQBAJ?hl=en&gbpv=1&printsec=frontcover" class="btn">read now</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/RichPoor.jfif" alt="">
+            <h3>Rich dad Poor dad</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>530 pages</span>
+            <a href="https://www.google.co.in/books/edition/Rich_Dad_Poor_Dad/Cx6aDwAAQBAJ?hl=en&gbpv=1&dq=rich+dad+poor+dad&printsec=frontcover" class="btn">read now</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/AB.jfif" alt="">
+            <h3>Akabar And Birbal</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>310 pages</span>
+            <a href="https://www.google.co.in/books/edition/Akbar_and_Birbal/LN9ptrHH7EoC?hl=en&gbpv=1&dq=akabar+birbal+book&printsec=frontcover" class="btn">read now</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/Time.jfif" alt="">
+            <h3>Time management</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>389 pages</span>
+            <a href="https://www.google.co.in/books/edition/Time_Management/oYOGDwAAQBAJ?hl=en&gbpv=1&dq=hindi+books&printsec=frontcover" class="btn">read now</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/sherlock.jfif" alt="">
+            <h3>Sherlock holmes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>770 pages</span>
+            <a href="https://www.google.co.in/books/edition/The_Best_of_Sherlock_Holmes/UomtUqgaJlkC?hl=en&gbpv=1&dq=sherlock+holmes+books&printsec=frontcover" class="btn">read now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- dishes section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h3 class="sub-heading"> about us </h3>
+    <h1 class="heading"> </h1>
+
     <div class="row">
 
+        <div class="image">
+            <img src="images/deal-img.jpg" alt="">
+        </div>
+
         <div class="content">
-            <h3>Books are your true friends</h3>
-            <p>The library is inhabited by spirits that come out of the pages at night!</p>
-            <a href="#" class="btn">read now</a>
-        </div>
-
-        <div class="swiper books-slider">
-            <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide"><img src="images/book-1.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="images/book-2.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="images/book-3.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="images/book-4.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="images/book-5.png" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="images/book-6.png" alt=""></a>
-            </div>
-            <img src="images/stand.png" class="stand" alt="">
-        </div>
-
-    </div>
-
-</section>
-
-<!-- home section ense  -->
-
-<!-- icons section starts  -->
-
-<section class="icons-container">
-
-    <div class="icons">
-        <!-- <i class="fas fa-shipping-fast"></i> -->
-        <div class="content">
-            <h3>Free books available</h3>
-            <p>Read as many you want</p>
-        </div>
-    </div>
-
-    <div class="icons">
-        <!-- <i class="fas fa-lock"></i> -->
-        <div class="content">
-            <h3>All language support</h3>
-            <p>Read in any language</p>
-        </div>
-    </div>
-
-    <div class="icons">
-        <!-- <i class="fas fa-redo-alt"></i> -->
-        <div class="content">
-            <h3>Live it!!</h3>
-            <p>Happy reading</p>
-        </div>
-    </div>
-
-    <div class="icons">
-        <!-- <i class="fas fa-headset"></i> -->
-        <div class="content">
-            <h3>24/7 support</h3>
-            <p>available at any time</p>
-        </div>
-    </div>
-
-</section>
-
-<!-- icons section ends -->
-
-<!-- featured section starts  -->
-
-<section class="featured" id="featured">
-
-    <h1 class="heading"> <span>other books</span> </h1>
-
-    <div class="swiper featured-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
+            <h3>A book is a gift you can open again and again.</h3>
+                <a href="#">shitalsolanke539@gmail.com</a>
+                <a href="#">sangli, india - 416410</a>
+            </p>
+            <div class="icons-container">
                 <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <i class="uil uil-books"></i>
+                    <span>All books available</span>
                 </div>
-                <div class="image">
-                    <img src="images/Agnipankh.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Wings of fire</h3>
-                    <div class="price">580 pages</div>
-                    <a href="https://www.google.co.in/books/edition/Wings_of_Fire/c3qmIZtWUjAC?hl=en&gbpv=1" class="btn">read now</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
                 <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>Books are free</span>
                 </div>
-                <div class="image">
-                    <img src="images/chankya.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Chanakya Neeti</h3>
-                    <div class="price">760 pages</div>
-                    <a href="https://www.google.co.in/books/edition/Chanakya_Neeti/uIwzEAAAQBAJ?hl=en&gbpv=1&printsec=frontcover" class="btn">read now</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
                 <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="images/sherlock.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Sherlock Holmes</h3>
-                    <div class="price">670 pages</div>
-                    <a href="https://www.google.co.in/books/edition/The_Best_of_Sherlock_Holmes/UomtUqgaJlkC?hl=en&gbpv=1&dq=sherlock+holmes+books&printsec=frontcover" class="btn">read now</a>
+                    <i class="uil uil-clock-two"></i>
+                    <span> Read anytime</span>
                 </div>
             </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="images/Time.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Time Management</h3>
-                    <div class="price">370 pages</span></div>
-                    <a href="https://www.google.co.in/books/edition/Time_Management/oYOGDwAAQBAJ?hl=en&gbpv=1&dq=hindi+books&printsec=frontcover" class="btn">read now</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="images/RichPoor.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Rich dad poor dad</h3>
-                    <div class="price">790 pages </div>
-                    <a href="https://www.google.co.in/books/edition/Rich_Dad_Poor_Dad/Cx6aDwAAQBAJ?hl=en&gbpv=1&dq=rich+dad+poor+dad&printsec=frontcover" class="btn">read now</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="images/AB.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Akabar And Birbal</h3>
-                    <div class="price">694 pages</span></div>
-                    <a href="https://www.google.co.in/books/edition/Akbar_and_Birbal/LN9ptrHH7EoC?hl=en&gbpv=1&dq=akabar+birbal+book&printsec=frontcover" class="btn">read now</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="images/alchemist.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>the alchemist</h3>
-                    <div class="price">860 pages</span></div>
-                    <a href="#" class="btn">read now</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="images/grow.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Think and grow rich</h3>
-                    <div class="price">573 pages</div>
-                    <a href="https://www.google.co.in/books/edition/Think_and_Grow_Rich/pNOdDQAAQBAJ?hl=en&gbpv=1&dq=vyakti+ani+valli&printsec=frontcover" class="btn">add to cart</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="images/ravan.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Raavan</h3>
-                    <div class="price">1200 pages</div>
-                    <a href="#" class="btn">read now</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="#" class="fas fa-search"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="images/vyakti.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Atomic habits</h3>
-                    <div class="price">289 pages</span></div>
-                    <a href="https://www.google.co.in/books/edition/Atomic_Habits/fFCjDQAAQBAJ?hl=en&gbpv=1&dq=all+books&printsec=frontcover" class="btn">read now</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-    </div>
-
-</section>
-
-<!-- featured section ends -->
-
-<!-- newsletter section starts -->
-
-<section class="newsletter">
-
-    <form action="">
-        <h3>subscribe for latest updates</h3>
-        <input type="email" name="" placeholder="enter your email" id="" class="box">
-        <input type="submit" value="subscribe" class="btn">
-    </form>
-
-</section>
-
-<!-- newsletter section ends -->
-
-<!-- arrivals section starts  -->
-
-<section class="arrivals" id="arrivals">
-
-    <h1 class="heading"> <span>famous ones</span> </h1>
-
-    <div class="swiper arrivals-slider">
-
-        <div class="swiper-wrapper">
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="images/dirt.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>American dirt</h3>
-                    <div class="price">469 pages</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="images/mid.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>midnight library</h3>
-                    <div class="price">679 pages</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="images/tame.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Untamed</h3>
-                    <div class="price">766 pages</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="images/beach.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Beach read</h3>
-                    <div class="price">670 pages</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="images/obama.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>The promised land</h3>
-                    <div class="price">361 pages</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="swiper arrivals-slider">
-
-        <div class="swiper-wrapper">
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="images/theif.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>The theif</h3>
-                    <div class="price">889 pages</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="images/vyakti.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>vyakti ani valli</h3>
-                    <div class="price">544 pages</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="images/aai.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Shyamchi aai</h3>
-                    <div class="price">468 pages</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="images/peshva.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>peshwai</h3>
-                    <div class="price">455 pages</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="swiper-slide box">
-                <div class="image">
-                    <img src="images/mrutunjay.jfif" alt="">
-                </div>
-                <div class="content">
-                    <h3>Mrutyunjay</h3>
-                    <div class="price">896 pages</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </a>
-
+            <a href="#" class="btn"> Happy reading</i></a>
         </div>
 
     </div>
 
 </section>
 
-<!-- arrivals section ends -->
+<!-- about section ends -->
 
-<!-- deal section starts  -->
+<!-- menu section starts  -->
 
-<section class="deal">
+<section class="menu" id="menu">
 
-    <div class="content">
-        <h3>Read anywhere, Anytime </h3>
-        <h1>At one place</h1>
-        <p>Reading the best state yet to keep absolute loneliness at bay</p>
-        <a href="#" class="btn">Happy reading</a>
-    </div>
+    <h3 class="sub-heading"> our other books </h3>
+    <h1 class="heading"> Take a Look here </h1>
 
-    <div class="image">
-        <img src="images/deal-img.jpg" alt="">
-    </div>
+    <div class="box-container">
 
-</section>
-
-<!-- deal section ends -->
-
-<!-- reviews section starts  -->
-
-<section class="reviews" id="reviews">
-
-    <h1 class="heading"> <span> reviews</span> </h1>
-
-    <div class="swiper reviews-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="images/pic-1.png" alt="">
-                <h3>john deo</h3>
-                <p>Auggie, the main character is boring. He has no special qualities and is just a blank slate of a person. Real people do not act like him at all. He is portrayed like an angel, and everyone else in the story are mean and cruel by not being his friend. </p>
+        <div class="box">
+            <div class="image">
+                <img src="images/book-5.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -587,12 +304,19 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
+                <h3>The Giver</h3>
+                <p>The Giver is a 1993 American young adult dystopian novel written by Lois Lowry. It is set in a society which at first appears to be utopian but is revealed .......</p>
+                <a href="#" class="btn">Author: Lois Lowry</a>
+                <span class="price">Novel</span>
             </div>
+        </div>
 
-            <div class="swiper-slide box">
-                <img src="images/pic-2.png" alt="">
-                <h3>alice mark</h3>
-                <p>Frankenstein has never been more relevant given how out of control both Big Tech has become and the dangers posed by cloning.  While the scientific community claims that they collectively opposed the idea of cloning an entire human being, inevitably,</p>
+        <div class="box">
+            <div class="image">
+                <img src="images/book-7.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -600,12 +324,119 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
+                <h3>Harry potter</h3>
+                <p>The Philosopher's Stone is a fantasy novel.maker of the Philosopher's Stone, an object capable of turning metal into gold and granting immortality with its Elixir of Life</p>
+                <a href="#" class="btn">Author: J. K. Rowling</a>
+                <span class="price">Fantasy fiction</span>
             </div>
+        </div>
 
-            <div class="swiper-slide box">
-                <img src="images/pic-3.png" alt="">
-                <h3>jack denmark</h3>
+        <div class="box">
+            <div class="image">
+                <img src="images/book-8.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Number the Stars</h3>
+                <p>The escape of a family of Jews from Copenhagen, Denmark, during World War II. The story centers on 10-year-old Annemarie Johansen, who lives with her mother</p>
+                <a href="#" class="btn">Author: Lois Lowry</a>
+                <span class="price">Historical fiction</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/book-9.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>A Wrinkle in Time</h3>
+                <p>A Wrinkle in Time is a young adult novel written by American author Madeleine L'Engle. First published in 1962, the book won the Newbery Medal, </p>
+                <a href="#" class="btn">Author: Madeleine L'Engle</a>
+                <span class="price">science fiction</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/book-10.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Frankenstein</h3>
+                <p>The story of Victor Frankenstein, a young scientist who creates a sapient creature in an unorthodox scientific experiment</p>
+                <a href="#" class="btn">Author:Mary Shelley</a>
+                <span class="price">Horror fiction</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/book-1.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Tuesdays with Morrie</h3>
+                <p>Tuesdays with Morrie is a memoir by American author Mitch Albom about a series of visits Albom made to his former sociology professor Morrie Schwartz</p>
+                <a href="#" class="btn">Author: Mitch Albom</a>
+                <span class="price">Memoir</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/book-7.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>The Martian</h3>
                 <p>The Martian is a 2011 science fiction debut novel written by Andy Weir. The book was originally self-published on Weir's blog</p>
+                <a href="#" class="btn">Author: Andy Weir</a>
+                <span class="price">Novel</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/book-10.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -613,126 +444,187 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
+                <h3>Wonder</h3>
+                <p>Wonder after an incident where her son noticed a girl with a severe facial difference and started to cry.</p>
+                <a href="#" class="btn">Author: R. J. Palacio</a>
+                <span class="price">Novel</span>
             </div>
-            <div class="swiper-slide box">
-                <img src="images/pic-4.png" alt="">
-                <h3>kristen liyo</h3>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/book-5.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>One Day</h3>
+                <p>The novel attracted generally positive reviews and was named 2010 Galaxy Book of the Year</p>
+                <a href="#" class="btn">Author: David Nicholls</a>
+                <span class="price">Novel</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- review section starts  -->
+
+<!-- <section class="review" id="review">
+
+    <h3 class="sub-heading"> Some reviews </h3>
+    <h1 class="heading"> what they say </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="user-info">
+                        <h3>Alice joe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Auggie, the main character is boring. He has no special qualities and is just a blank slate of a person. Real people do not act like him at all. He is portrayed like an angel, and everyone else in the story are mean and cruel by not being his friend.  </p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Frankenstein has never been more relevant given how out of control both Big Tech has become and the dangers posed by cloning.  While the scientific community claims that they collectively opposed the idea of cloning an entire human being, inevitably, </p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="user-info">
+                        <h3>Vera Ewing</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
                 <p>I'm not much of a reader myself but this book is so good. I love all of the characters and it is so fun to watch the Disney movie and compare. It is an amazing read and not a very long book. It deserves every bit of praise that it gets, such an amazing story.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
             </div>
 
-            <div class="swiper-slide box">
-                <img src="images/pic-5.png" alt="">
-                <h3>Dvisha priya</h3>
-                <p>his is one of the best books I've ever read. It shows the world in a very real sense. It doesn't lie, or romantisise every moment. It tells the truth. Reality is wrong timing, and not knowing you're in love until it's too late.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="user-info">
+                        <h3>Divisha Priya</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="images/pic-6.png" alt="">
-                <h3>jiya lek</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+                <p>This is one of the best books I've ever read. It shows the world in a very real sense. It doesn't lie, or romantisise every moment. It tells the truth. Reality is wrong timing, and not knowing you're in love until it's too late.</p>
             </div>
 
         </div>
 
     </div>
     
-</section>
+</section> -->
 
-<!-- reviews section ends -->
+<!-- review section ends -->
 
-<!-- blogs section starts  -->
+<!-- order section starts  -->
 
-<section class="blogs" id="blogs">
+<section class="order" id="order">
 
-    <h1 class="heading"> <span>our blogs</span> </h1>
+    <h3 class="sub-heading"> Sign in </h3>
+    <h1 class="heading"> For more </h1>
 
-    <div class="swiper blogs-slider">
+    <form action="">
 
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="images/blog-1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>another books to read here</h3>
-                    <p>Tuesdays with Morrie is a memoir by American author Mitch Albom about a series of visits Albom made to his former sociology professor Morrie Schwartz</p>
-                    <a href="https://www.google.co.in/books/edition/Time_Management/oYOGDwAAQBAJ?hl=en&gbpv=1&dq=hindi+books&printsec=frontcover" class="btn">read more</a>
-                </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your name</span>
+                <input type="text" placeholder="enter your name">
             </div>
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="images/blog-2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Books website</h3>
-                    <p>Availability of 1500+ books here...</p>
-                    <a href="https://openlibrary.org/" class="btn">read more</a>
-                </div>
+            <div class="input">
+                <span>your number</span>
+                <input type="number" placeholder="enter your number">
             </div>
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="images/blog-3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Some section wise book list</h3>
-                    <p></p>
-                    <a href="https://openlibrary.org/explore" class="btn">read more</a>
-                </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your email</span>
+                <input type="text" placeholder="enter email address">
             </div>
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="images/blog-4.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Books for student</h3>
-                    <p>Read, learn and grow more</p>
-                    <a href="https://openlibrary.org/collections/k-12" class="btn">read more</a>
-                </div>
+            <div class="input">
+                <span>book you require</span>
+                <input type="text" placeholder="type book name">
             </div>
-
-            <div class="swiper-slide box">
-                <div class="image">
-                    <img src="images/blog-5.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Various Collections</h3>
-                    <p>collection of different books </p>
-                    <a href="https://openlibrary.org/collections/Goosebumps" class="btn">read more</a>
-                </div>
+        </div>
+        <!-- <div class="inputBox"> -->
+            <!-- <div class="input">
+                <span>No. of book/s read</span>
+                <input type="number" placeholder="how many books read">
+            </div> -->
+            <!-- <div class="input">
+                <span>time you read here</span>
+                <input type="datetime-local">
+            </div> -->
+        <!-- </div> -->
+        <div class="inputBox">
+            <div class="input">
+                <span>your address</span>
+                <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
             </div>
-
+            <div class="input">
+                <span>your message</span>
+                <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+            </div>
         </div>
 
-    </div>
+        <input type="submit" value="send" class="btn">
+
+    </form>
 
 </section>
 
-<!-- blogs section ends -->
+<!-- order section ends -->
 
 <!-- footer section starts  -->
 
@@ -741,59 +633,49 @@
     <div class="box-container">
 
         <div class="box">
-            <!-- <h3>our locations</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> africa </a> -->
+            <h3></h3>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
         </div>
 
         <div class="box">
             <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> books </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> famous one </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> reviews </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> read </a>
-        </div>
-
-        <div class="box">
-            <!-- <h3>extra links</h3> -->
-            <!-- <a href="#"> <i class="fas fa-arrow-right"></i> account info </a> -->
-            <!-- <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a> -->
-            <!-- <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a> -->
-            <!-- <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a> -->
-            <!-- <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a> -->
+            <a href="#">home</a>
+            <a href="#">books</a>
+            <a href="#">about us</a>
+            <a href="#">menu</a>
+            <!-- <a href="#">reivews</a>
+            <a href="#">feedback</a> -->
         </div>
 
         <div class="box">
             <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> shitals@gmail.com </a>
-            <img src="images/worldmap.png" class="map" alt="">
+            <a href="#">+123-456-7890</a>
+            <a href="#">7676276218</a>
+            <a href="#">shitalsolanke539@gmail.com</a>
+            <a href="#">sangli, india - 416410</a>
         </div>
-        
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
     </div>
 
-    <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <!-- <a href="#" class="fab fa-pinterest"></a> -->
-    </div>
-
-    <div class="credit"> created by <span>Shital</span> | all rights reserved! </div>
+    <div class="credit"> copyright@2021 by <span>shital solanke</span> </div>
 
 </section>
 
 <!-- footer section ends -->
 
-<!-- loader  -->
-
+<!-- loader part  -->
 <div class="loader-container">
     <img src="images/loader-img.gif" alt="">
 </div>
@@ -813,10 +695,15 @@
 
 
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
